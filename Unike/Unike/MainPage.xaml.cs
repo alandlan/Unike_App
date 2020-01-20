@@ -16,6 +16,12 @@ namespace Unike
         public MainPage()
         {
             InitializeComponent();
+            TelaLogin();
+        }
+
+        async void TelaLogin()
+        {
+            await Navigation.PushAsync(new Paginas.PaginaInicial());
         }
     }
 }

@@ -10,7 +10,8 @@ namespace Unike
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new NavigationPage(new Paginas.PaginaInicial());
         }
 
         protected override void OnStart()

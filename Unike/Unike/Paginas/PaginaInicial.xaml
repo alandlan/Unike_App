@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Unike.Paginas.PaginaInicial"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="120" />
+            </Grid.RowDefinitions>
+            <Frame Grid.Row="0" BackgroundColor="#ede4d5" Margin="10" CornerRadius="10">
+                <StackLayout>
+                    <Image Source="logoUnike.jpg" HorizontalOptions="Center"  VerticalOptions="Center" />
+                    <Image Source="ImgLogin2.jpg" HeightRequest="350" WidthRequest="350" />
+                    <Label Text="Bem Vindo ao App do Profissional" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold"/>
+                    <Label Text="Receba e selecione os serviços que deseja, criando assim a sua própria agenda!" HorizontalOptions="Center" HorizontalTextAlignment="Center" TextColor="Black" />
+                </StackLayout>
+            </Frame>
+            <StackLayout Grid.Row="1" Margin="10,5,10,10">
+                <Button Text="Tenho Conta" BackgroundColor="DarkRed" TextColor="White" BorderColor="Black" BorderWidth="1" HeightRequest="50" Clicked="TenhoConta" />
+                <Button Text="Criar conta" BackgroundColor="#f6e9e9" BorderColor="Black" BorderWidth="1" HeightRequest="50" Clicked="CriarConta" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
